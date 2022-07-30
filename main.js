@@ -1,23 +1,37 @@
-const card1 = document.querySelector('.card1');
-const card2 = document.querySelector('.card2');
 
-const btn = document.getElementsByClassName('.btn-submit');
+const card1 = document.getElementById('card1');
+const card2 = document.getElementById('card2');
 
-const ratings = document.querySelectorAll('.buttons button');
+const message = document.getElementById('message');
 
-for(let i = 0; i< ratings.length;i++){
-    ratings[i].addEventListener('click', function(){
-        let rating = ratings[i].innerHTML
+const btn = document.getElementById('btnSubmit');
 
-        for(let i = 0; i< ratings.length;i++){
-            ratings[i].classList.contains('active');
-            ratings[i].classList.remove('selected');
-        }
-        ratings[i].classList.add('selected');
+const ratings = document.querySelectorAll(".buttons button");
 
-        btn.addEventListener('click', function(){
-            console.log(rating);
-        })
-    }
-    )
+
+
+let selected = '';
+
+ratings.forEach(btn => {
+    
+    btn.addEventListener("click", (e) => {
+        removeClass();
+        selected = e.target.outerText
+        e.target.classList.add('selected');
+        console.log(selected)
+    })
+    
+})
+
+btn.addEventListener("click", () => {
+    message.textContent = `You selected ${selected} out of 5`
+    card1.classList.add("content");
+    card2.classList.remove("content");
+})
+
+
+function removeClass() {
+    ratings.forEach(btn => {
+        btn.classList.remove('selected');
+    })
 }

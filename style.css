@@ -42,12 +42,12 @@ body {
     color: hsl(217, 12%, 63%);
 }
 
-.btnRatings {
+.buttons {
     display: flex;
     margin-top: 2rem;
 }
 
-.btnRatings button {
+.buttons button {
     background-color: hsl(210, 18%, 13%);
     border: none;
     border-radius: 50%;
@@ -62,8 +62,8 @@ body {
     cursor: pointer;
 }
 
-.btnRatings button:hover {
-    background-color: hsl(25, 97%, 53%);
+.buttons button:hover {
+    background-color: hsl(216, 12%, 54%);
     color: white;
 }
 
@@ -91,9 +91,14 @@ body {
     color: hsl(25, 97%, 53%);
 }
 
-.card2 {
+.content {
     display: none;
 }
+
+.container .buttons button.selected {
+    background: #fb7413;
+    color: white;
+  }
 
 .card2-body {
     display: flex;
