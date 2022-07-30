@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    font-size: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    background:  hsl(213, 19%, 18%);
+    margin-top: 5%;
+    padding: 50px 50px;
+}
+
+.star {
+    /* padding: 20px; */
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: hsl(210, 18%, 13%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.card1 p {
+    font-size: 17px;
+    margin-top: 1.5rem;
+    color: hsl(217, 12%, 63%);
+}
+
+.btnRatings {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.btnRatings button {
+    background-color: hsl(210, 18%, 13%);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /* padding: 10px 20px; */
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 20px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.btnRatings button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.selected {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+  }
+
+.btn-submit {
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 30px;
+    padding: 15px;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.card2 {
+    display: none;
+}
+
+.card2-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.message {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    background-color: hsl(210, 18%, 13%);
+    border-radius: 50px;
+    color: hsl(25, 97%, 53%);
+    padding: 10px 15px;
+    font-weight: 400;
+}
+
+.card2-body p {
+    font-size: 16px;
+    margin-top: 1.5rem;
+    color: hsl(217, 12%, 63%);
+}
